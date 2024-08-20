@@ -6,9 +6,10 @@ const palindromes = function (palindrome) {
         if (alphaNum.includes(char)) {
             newArray.push(char);
         }
-    }
-    const revArray = newArray.reverse();
-    return newArray === revArray;
+    };
+    const revString = newArray.slice(0).reverse().join("");
+    const newString = newArray.join("");
+    return revString === newString;
 };
 
 // Do not edit below this line
